@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/SingUp">Sing Up</router-link> |
-      <router-link to="/signIn">Sign In</router-link> |
-      <router-link to="/profile">profile</router-link> |
-      <router-link to="/stats">Stats</router-link> 
-    </div>
-    <router-view/>
+    <v-app style="z-index: 2">
+      <img
+        class="card-overlay"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80"
+      />
+      <div id="nav">
+        <!-- <router-link to="/SingUp">Sing Up</router-link> |
+        <router-link to="/signIn">Sign In</router-link> |
+        <router-link to="/profile">profile</router-link> |
+        <router-link to="/stats">Stats</router-link> -->
+        <router-view />
+      </div>
+    </v-app>
   </div>
 </template>
 
@@ -18,17 +24,22 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+.demo-bg {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
+.card-overlay {
+  opacity: 0.5;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
 }
 </style>
