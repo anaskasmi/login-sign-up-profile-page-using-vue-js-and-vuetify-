@@ -1,4 +1,13 @@
-# test_technique
+![image](https://user-images.githubusercontent.com/29683040/124354296-45438e80-dc03-11eb-9863-4434d0019148.png)
+![image](https://user-images.githubusercontent.com/29683040/124354299-470d5200-dc03-11eb-82bc-b1bbda905fde.png)
+![image](https://user-images.githubusercontent.com/29683040/124354302-496fac00-dc03-11eb-90e2-d51085f8ae7e.png)
+
+
+![image](https://user-images.githubusercontent.com/29683040/124354312-5096ba00-dc03-11eb-9f86-f4741527938d.png)
+![image](https://user-images.githubusercontent.com/29683040/124354305-4d033300-dc03-11eb-82b3-6c8e16763ab7.png)
+
+
+![image](https://user-images.githubusercontent.com/29683040/124354314-52f91400-dc03-11eb-85f9-8c3fc40d676b.png)
 
 ## Project setup
 ```
@@ -14,6 +23,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
