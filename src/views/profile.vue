@@ -18,7 +18,7 @@
     </v-row>
     <!-- name -->
     <v-row class="justify-center pb-5">
-      <span class="title text-secondary py-2">{{ name }}</span>
+      <span class="title text-secondary py-2 font-weight-bold">{{ name }}</span>
     </v-row>
     <v-text-field
       label="First Name"
@@ -71,7 +71,7 @@
           tile
           elevation="0"
           @click="backToPreviousPage()"
-          class="pa-6"
+          class="pa-6 font-weight-bold"
         >
           Cancel
         </v-btn>
@@ -79,7 +79,7 @@
       <v-col cols="12" md="6">
         <v-btn
           color="info"
-          class="pa-6"
+          class="pa-6 font-weight-bold"
           block
           tile
           elevation="0"
@@ -115,7 +115,7 @@ export default {
         .get("https://jsonplaceholder.typicode.com/todos/1")
         .then((response) => {
           this.$swal({
-            title: "Are you sure?",
+            title: "Updated",
             text: "Your profile was updated successfully",
             icon: "success",
             confirmButtonText: "Done",
@@ -132,3 +132,4 @@ export default {
   },
 };
 </script>
+

@@ -2,8 +2,8 @@
   <div class="overlay-panel overlay-left">
     <h1
       :class="{
-        'px-2 my-4 sm-title': $vuetify.breakpoint.smAndDown,
-        'px-8 my-4 md-title': $vuetify.breakpoint.mdAndUp,
+        'px-2 my-4 sm-title font-weight-bold': $vuetify.breakpoint.smAndDown,
+        'px-8 my-4 md-title font-weight-bold': $vuetify.breakpoint.mdAndUp,
       }"
     >
       Welcome Back!
@@ -22,8 +22,8 @@
       dark
       rounded
        :class="{
-        'pa-4 my-10': $vuetify.breakpoint.smAndDown,
-        'pa-6 my-10': $vuetify.breakpoint.mdAndUp,
+        'pa-4 my-10 font-weight-bold': $vuetify.breakpoint.smAndDown,
+        'pa-6 my-10 font-weight-bold': $vuetify.breakpoint.mdAndUp,
       }"
       elevation="0"
       @click="isSignInPanelActive = false"

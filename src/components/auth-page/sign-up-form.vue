@@ -8,7 +8,7 @@
       }"
     >
       <img src="team.png" class="team-img pt-10" />
-      <h1 class="pb-12">Create Account</h1>
+      <h1 class="pb-12 font-weight-bold">Create Account</h1>
       <v-text-field
         placeholder="Username"
         prepend-inner-icon="mdi-account"
@@ -27,7 +27,7 @@
         block
         dark
         tile
-        class="pa-6"
+        class="pa-6 font-weight-bold"
         elevation="0"
         @click="saveformData()"
         >Sign Up</v-btn

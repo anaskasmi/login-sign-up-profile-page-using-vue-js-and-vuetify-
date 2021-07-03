@@ -51,7 +51,7 @@
             outlined
             tile
             block
-            class="pa-6"
+            class="pa-6 font-weight-bold"
             elevation="0"
             @click="currentSignUpStep = 1"
             >Back</v-btn
@@ -63,7 +63,7 @@
             dark
             tile
             block
-            class="pa-6"
+            class="pa-6 font-weight-bold"
             elevation="0"
             @click="saveFormData()"
             >Sign Up</v-btn

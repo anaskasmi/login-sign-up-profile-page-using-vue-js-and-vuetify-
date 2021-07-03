@@ -8,7 +8,7 @@
       }"
     >
       <img src="team.png" class="team-img pt-8" />
-      <h1 class="pb-8">Sign in</h1>
+      <h1 class="pb-8 font-weight-bold">Sign in</h1>
       <v-text-field
         prepend-inner-icon="mdi-account"
         placeholder="Username"
@@ -25,7 +25,7 @@
         block
         dark
         tile
-        class="pa-6"
+        class="pa-6 font-weight-bold"
         elevation="0"
         @click="login()"
         >Sign In</v-btn

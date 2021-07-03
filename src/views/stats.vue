@@ -6,9 +6,7 @@
       }">
       <v-chart class="chart" :option="option" />
     </v-card-text>
-    <v-card-actions>
-      <v-btn tile outlined  elevation="0" color="info" @click="$router.back()">back</v-btn>
-    </v-card-actions>
+   
   </v-card>
 </template>
 
