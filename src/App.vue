@@ -1,16 +1,20 @@
 <template>
-  <div id="app">
-    <v-app style="z-index: 2">
-      <img
-        class="card-overlay"
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80"
-      />
-      <div id="nav">
+  <div id="app" class="card-overlay">
+    <v-app>
+      <div :class="{
+        'sm-main-style': $vuetify.breakpoint.smAndDown,
+        'md-main-style': $vuetify.breakpoint.mdAndUp,
+      }">
         <!-- <router-link to="/SingUp">Sing Up</router-link> |
         <router-link to="/signIn">Sign In</router-link> |
         <router-link to="/profile">profile</router-link> |
         <router-link to="/stats">Stats</router-link> -->
         <router-view />
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/anaskasmi/" target="_blank"
+            >Anas@KASMI.DEV</a
+          >
+        </footer>
       </div>
     </v-app>
   </div>
@@ -23,23 +27,31 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1414&q=80")
+    no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
-.demo-bg {
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
+.sm-main-style {
+  margin: auto;
+  width: 95%;
 }
-.card-overlay {
-  opacity: 0.5;
+.md-main-style {
+  margin: auto;
+  width: 70%;
+}
 
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.5);
+.footer {
+  padding: 30px 0px;
+}
+.footer a {
+  text-decoration: none;
+  color: white !important;
+  font-size: 1.1rem;
+  font-family: cursive;
+  font-weight: 600;
 }
 </style>
