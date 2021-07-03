@@ -1,5 +1,8 @@
 <template>
-  <v-container class="container pa-lg-10 pa-md-4 pa-sm-2 my-12">
+  <v-container  :class="{
+        'container pa-4 my-12': $vuetify.breakpoint.smAndDown,
+        'container pa-10 my-12': $vuetify.breakpoint.mdAndUp,
+      }">
     <!-- alert -->
     <v-row>
       <v-alert text type="success" border="left" width="100%" dismissible>
@@ -10,7 +13,6 @@
     <!-- avatar -->
     <v-row class="justify-center">
       <v-avatar size="150px">
-        <!-- <img src="https://image.flaticon.com/icons/png/512/599/599305.png" /> -->
         <img src="https://image.flaticon.com/icons/png/512/265/265674.png" />
       </v-avatar>
     </v-row>

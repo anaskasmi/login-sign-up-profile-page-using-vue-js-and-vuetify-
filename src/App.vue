@@ -1,18 +1,25 @@
 <template>
   <div id="app" class="card-overlay">
     <v-app>
-      <div :class="{
-        'sm-main-style': $vuetify.breakpoint.smAndDown,
-        'md-main-style': $vuetify.breakpoint.mdAndUp,
-      }">
-        <!-- <router-link to="/SingUp">Sing Up</router-link> |
-        <router-link to="/signIn">Sign In</router-link> |
-        <router-link to="/profile">profile</router-link> |
-        <router-link to="/stats">Stats</router-link> -->
+      <div
+        :class="{
+          'sm-main-style': $vuetify.breakpoint.smAndDown,
+          'md-main-style': $vuetify.breakpoint.mdAndUp,
+        }"
+      >
         <router-view />
         <footer class="footer">
           <a href="https://www.linkedin.com/in/anaskasmi/" target="_blank"
             >Anas@KASMI.DEV</a
+          >
+          <v-btn
+            tile
+            outlined
+            elevation="0"
+            color="info"
+            class="mx-3"
+            @click="$router.push('/stats')"
+            >our stats</v-btn
           >
         </footer>
       </div>
