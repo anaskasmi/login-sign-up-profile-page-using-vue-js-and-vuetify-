@@ -1,4 +1,7 @@
+
+## GIF
 ![2021-07-03_13h44_56](https://user-images.githubusercontent.com/29683040/124354862-20044f80-dc06-11eb-8f5a-55e5fe1204f4.gif)
+## Screen shots
 ![image](https://user-images.githubusercontent.com/29683040/124354296-45438e80-dc03-11eb-9863-4434d0019148.png)
 ![image](https://user-images.githubusercontent.com/29683040/124354299-470d5200-dc03-11eb-82bc-b1bbda905fde.png)
 ![image](https://user-images.githubusercontent.com/29683040/124354302-496fac00-dc03-11eb-90e2-d51085f8ae7e.png)
